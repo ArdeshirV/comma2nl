@@ -21,12 +21,10 @@ def main(args):
         if(c == ','):
             index += 1
             if contents_len <= index: break
-            c = contents[index]
             print()
-            if(contents[index] == ' '):
+            while(contents[index] == ' ' and contents_len <= index):
                 index += 1
-                if contents_len <= index: break
-                c = contents[index]
+            c = contents[index]
         print(c, sep='', end='')
         index += 1
         if contents_len <= index: break
