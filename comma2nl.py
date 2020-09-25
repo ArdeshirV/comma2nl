@@ -6,7 +6,7 @@ from sys import argv, exit
 
 def main(args):
     if len(args) < 2:
-        print("\033[0;31mError: \033[1;31mYou sould"
+        print("\033[0;31mError: \033[1;31mYou should"
               " specify a file name to process!\033[0m")
         return -1
     file_input = open(args[1], "r")
