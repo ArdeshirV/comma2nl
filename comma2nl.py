@@ -22,7 +22,7 @@ def main(args):
             index += 1
             if contents_len <= index: break
             print()
-            while(contents[index] == ' ' and contents_len <= index):
+            while(contents[index] == ' ' and contents_len - 1 > index):
                 index += 1
             c = contents[index]
         print(c, sep='', end='')
